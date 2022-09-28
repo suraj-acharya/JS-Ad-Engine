@@ -1,5 +1,5 @@
 import styles from "./styles/index.module.css";
-import {colorPalette,ALERT_MESSAGE} from './constants';
+import {COLORPALETTE,ALERT_MESSAGE,BACKGROUNDTIMERCOUNT} from './constants';
 import {checkPropertyCompatibility, changeBackgroundColor} from './helpers';
 
 const stickyElement = document.createElement("footer");
@@ -14,8 +14,8 @@ function handlePageStateChange(key) {
     let timer;
     return (e) => {
         if(document[key] !== "hidden") {
-            changeBackgroundColor(stickyElement, colorPalette);
-            timer = setInterval(changeBackgroundColor.bind(this,stickyElement, colorPalette), 30000);
+            changeBackgroundColor(stickyElement, COLORPALETTE);
+            timer = setInterval(changeBackgroundColor.bind(this,stickyElement, COLORPALETTE), BACKGROUNDTIMERCOUNT);
         } else clearInterval(timer);
     };
 }
