@@ -1,0 +1,49 @@
+.footer {
+    position: fixed;
+    border: 1px solid black;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    margin: 0 auto;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 480px) {
+    .footer {
+        height: 50px;
+        width: 320px;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .footer {
+        height: 50px;
+        width: 320px;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .footer {
+        height: 50px;
+        width: 320px;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .footer {
+        width: 728px;
+        height: 90px;
+    }
+}
+
+/* Media Query for Large screens */
+@media only screen and (min-width: 1281px) {
+    .footer {
+        width: 728px;
+        height: 90px;
+    }
+}
